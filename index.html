@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>얼마에요 - 고객지원</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #4CAF50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .support-section {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .support-section h2 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #4CAF50;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .faq-answer {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .contact-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .contact-info h3 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+
+        .contact-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-item i {
+            margin-right: 10px;
+            color: #4CAF50;
+            width: 20px;
+        }
+
+        .app-info {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        .app-info h3 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .app-info p {
+            color: rgba(255,255,255,0.9);
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+
+        .feature-list li:before {
+            content: "✓";
+            color: #4CAF50;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: rgba(255,255,255,0.8);
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .support-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🛒 얼마에요</h1>
+            <p>아이들이 즐겁게 배우는 돈 계산 게임</p>
+        </div>
+
+        <div class="support-section">
+            <h2>📱 앱 소개</h2>
+            <p>'얼마에요'는 아이들이 실생활에서 필요한 돈 계산을 재미있게 배울 수 있는 교육용 게임입니다.</p>
+            <ul class="feature-list">
+                <li>다양한 상품으로 실제 쇼핑 체험</li>
+                <li>지폐와 동전을 이용한 직관적인 결제 시스템</li>
+                <li>거스름돈 계산 퀴즈로 수학 실력 향상</li>
+                <li>음성 안내로 혼자서도 쉽게 학습</li>
+                <li>아이 친화적인 디자인과 애니메이션</li>
+            </ul>
+        </div>
+
+        <div class="support-section">
+            <h2>❓ 자주 묻는 질문</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Q. 몇 살부터 사용할 수 있나요?</div>
+                <div class="faq-answer">A. 유치원생(5-6세)부터 초등학생까지 사용할 수 있습니다. 음성 안내 기능이 있어 한글을 모르는 아이도 쉽게 따라할 수 있어요.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q. 음성이 나오지 않아요.</div>
+                <div class="faq-answer">A. 기기의 볼륨을 확인하고, 앱 설정에서 음성 기능이 활성화되어 있는지 확인해주세요. 처음 실행 시 음성 권한을 허용해야 합니다.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q. 광고가 너무 많이 나와요.</div>
+                <div class="faq-answer">A. 무료 앱이므로 광고가 포함되어 있습니다. 하루 일정 횟수 이상 플레이하면 광고가 나타날 수 있어요.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q. 앱이 멈춰요.</div>
+                <div class="faq-answer">A. 앱을 완전히 종료한 후 다시 실행해보세요. 문제가 지속되면 기기를 재시작하거나 앱을 재설치해주세요.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q. 더 많은 상품이 추가될 예정인가요?</div>
+                <div class="faq-answer">A. 네, 지속적으로 새로운 상품과 기능을 추가할 예정입니다. 업데이트를 통해 더 다양한 학습 경험을 제공하겠습니다.</div>
+            </div>
+        </div>
+
+        <div class="support-section">
+            <h2>🛠️ 문제 신고 및 개선 요청</h2>
+            <p>앱 사용 중 문제가 발생하거나 개선 사항이 있으시면 언제든지 연락해주세요.</p>
+            
+            <div class="contact-info">
+                <h3>📞 연락처</h3>
+                <div class="contact-item">
+                    <i>📧</i>
+                    <span>이메일: hancoding@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i>📱</i>
+                    <span>앱 버전: 1.0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="support-section">
+            <h2>🔒 개인정보 보호</h2>
+            <p>저희 앱은 아이들의 개인정보를 수집하지 않습니다. 모든 게임 데이터는 기기에 저장되며, 외부로 전송되지 않습니다.</p>
+        </div>
+
+        <div class="app-info">
+            <h3>🎮 즐거운 학습 경험을 제공합니다</h3>
+            <p>아이들이 놀이를 통해 자연스럽게 수학을 배울 수 있도록 도와주세요!</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 Youngmin Han. All rights reserved.</p>
+        <p>Design inspired by littledeep.com</p>
+    </div>
+</body>
+</html>
